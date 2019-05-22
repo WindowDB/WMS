@@ -28,6 +28,18 @@
             font-family:Microsoft YaHei;
             font-size: 14px;
         }
+        @media screen and (max-width: 1024px) { 
+            /*当屏幕尺寸小于1024px时，应用下面的CSS样式*/
+            .content {
+                width：100%;
+            }
+        }
+        @media screen and (min-width: 1024px) { 
+            /*当屏幕尺寸小于1024px时，应用下面的CSS样式*/
+            .content {
+                width：1024px;
+            }
+        }
     </style>
 </head>
 <body style="margin:0;padding:0px;left:0px;top:0px;background-color:#eee;width:100%">
@@ -45,7 +57,7 @@
         </div>
     </div>
     
-<div style="text-align:center;background-color:#eee;width:100%;margin:0;padding:0px;left:0px;top:0px;" >
+<div class="content" style="text-align:center;background-color:#eee;margin:0;padding:0px;left:0px;top:0px;" >
         
     <div style="margin:0 auto;
                 padding:10px; padding-top:100px; padding-bottom:100px; 

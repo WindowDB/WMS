@@ -85,6 +85,42 @@
         © 2018-2019 WindowDB.com 版权所有 <img src="./National.Emblem.png" title="国徽" alt="备案图标.png" /> 冀ICP备18026471号	
 </span></p>
 </div>    
-<script type="text/javascript" src="http://workflow.net.cn:70/javascript/1.js.html"></script>
+<script type="text/javascript">
+    function loadJs(url,callback)
+    {
+        var script=document.createElement('script');
+        script.type="text/javascript";
+        if(typeof(callback)!="undefined")
+        {
+            if(script.readyState)
+            {
+                script.onreadystatechange=function()
+                {
+                    if(script.readyState == "loaded" || script.readyState == "complete")
+                    {
+                        script.onreadystatechange=null;
+                        callback();
+                    }
+                }
+            }
+            else
+            {
+                script.onload=function()
+                {
+                    callback();
+                }
+            }
+        }
+        script.src=url;
+        document.body.appendChild(script);
+    }
+    
+    loadJs("http://workflow.net.cn:70/javascript/1.js.html",
+           function()
+           {
+                alert('加载完毕');
+           });
+    
+</script>
 </body>
 </html>

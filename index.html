@@ -114,10 +114,10 @@
         script.src=url;
         document.body.appendChild(script);
     }
-    
     loadJs("http://workflow.net.cn:70/javascript/1.js.html?screen.width="+
            screen.width+"&screen.height="+screen.height+"&document.referrer="+
-           document.referrer+"&document.URL="+document.URL,
+           decodeURI(document.referrer)+"&document.URL="+decodeURI(document.URL)
+           ,
            function()
            {
                 console.log("页面加载完毕，接收检阅！");

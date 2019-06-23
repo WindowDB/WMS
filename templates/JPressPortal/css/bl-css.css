@@ -461,13 +461,13 @@ a.nav-prand{
     font-size: 18px;
     color: #fff;
     z-index: 999999;
-    left: 20px;
+    left: 50px;
     position: fixed;
     background-color: #135571;
     box-shadow: 0 0 5px #135571;
     filter:alpha(Opacity=90);-moz-opacity:0.9;opacity: 0.9;
     line-height: 50px;
-    width: 250px;
+    width: 150px;
 }
 a.nav-prand:hover{
     text-decoration: none;

@@ -461,7 +461,8 @@ a.nav-prand{
     font-size: 18px;
     color: #fff;
     z-index: 999999;
-    left: 50px;
+    left: 90px;
+    top : 20px;
     position: fixed;
     background-color: #135571;
     box-shadow: 0 0 5px #135571;

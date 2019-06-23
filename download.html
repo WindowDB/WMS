@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+ <head> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>数窗WMS软件依赖第三方环境免费下载</title> 
+  <meta name="referrer" content="always"> 
+  <meta name="keywords" content="软件下载"> 
+  <meta name="description" content="WMS系统免费下载"> 
+  <link href="/templates/JPressPortal/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="/templates/JPressPortal/css/bl-css.css" rel="stylesheet"> 
+  <link href="/templates/JPressPortal/font-awesome/css/font-awesome.min.css" rel="stylesheet"> 
+ </head> 
+ <body> 
+  <div class="bl-header container-fluid"> 
+   <div class="container"> 
+    <nav class="navbar navbar-expand-lg navbar-dark bl-nav"> 
+     <a class="nav-prand" href="/">WindowDB - 首页</a> 
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
+     <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+      <ul class="navbar-nav mr-auto"> 
+       <li class="nav-item "> <a href="./example.html" target="_self">在线演示</a> </li> 
+       <li class="nav-item "> <a href="./download.html" target="_self">相关下载</a> </li> 
+       <li class="nav-item "> <a href="./setup.html" target="_self">安装部署</a> </li> 
+       <li class="nav-item "> <a href="./vedio.html" target="_self">教学视频</a> </li> 
+       <li class="nav-item "> <a href="./documents.html" target="_self">在线文档</a> </li> 
+       <li class="nav-item "> <a href="./connect.html" target="_self">联系我们</a> </li> 
+      </ul> 
+     </div> 
+    </nav> 
+   </div> 
+  </div> 
+  <div class="container bl-container"> 
+   <h2 class="bl-title-center">数窗WMS软件依赖第三方环境免费下载</h2> 
+   <div class="bl-artical"> 
+    <div id="menu"> 
+     <ul> 
+      <li><a href="#item3">java JDK下载</a></li> 
+      <li><a href="#item4">web服务下载</a></li> 
+      <li><a href="#item5">数据库下载</a></li> 
+     </ul> 
+    </div> 
+    <div id="content"> 
+     <div id="item1" class="item"> 
+      <p>数窗WMS是一款由Java开发的BS架构软件。支持Windows、Linux、或Mac OS等大多数操作系统作为运行环境，除了必要的硬件、操作系统以及网络（局域网或广域网）环境之外，还需要另外安装java、tomcat和数据库等第三方免费开源程序作为服务器运行环境。具体的安装步骤请参考<a href="./setup.html">《系统安装部署说明书》</a>，以下是生产运行环境所必须安装的依赖程序以及版本介绍。</p> 
+     </div> 
+     <div id="item3" class="item"> 
+      <h1>java JDK下载</h1> 
+      <p>开发测试及生产环境所使用的版本都是jdk1.8，具体小版本如下： </p> 
+      <pre class="prettyprint">    colindeMacBook-Pro:bin colin$ java -version
+    java version "1.8.0_111"
+    Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+    Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+    </pre> 请访问oracle官方网站选择对应的版本 
+      <a target="_blank" href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">点击此处选择版本下载</a>。 
+      <p></p> 
+     </div> 
+     <div id="item4" class="item"> 
+      <h1>web服务下载</h1> 
+      <p>数窗的web服务使用tomcat 1.7作为运行环境具体的小版本号如下所示： </p> 
+      <pre class="prettyprint">    colindeMacBook-Pro:bin colin$ ./version.sh 
+    Using CATALINA_BASE:   /Users/colin/Documents/apache-tomcat-7.0.73
+    Using CATALINA_HOME:   /Users/colin/Documents/apache-tomcat-7.0.73
+    Using CATALINA_TMPDIR: /Users/colin/Documents/apache-tomcat-7.0.73/temp
+    Using JRE_HOME:        /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
+    Using CLASSPATH:       /Users/colin/Documents/apache-tomcat-7.0.73/bin/bootstrap.jar:/Users/colin/Documents/apache-tomcat-7.0.73/bin/tomcat-juli.jar
+    Server version: Apache Tomcat/7.0.73
+    Server built:   Nov 7 2016 21:27:23 UTC
+    Server number:  7.0.73.0
+    OS Name:        Mac OS X
+    OS Version:     10.12.6
+    Architecture:   x86_64
+    JVM Version:    1.8.0_111-b14
+    JVM Vendor:     Oracle Corporation
+    </pre> 请访问apache官方网站选择对应的版本 
+      <a target="_blank" href="http://tomcat.apache.org/">点击此处选择版本下载</a>。 
+      <p></p> 
+      <p>如有特殊要求，也可以使用其他产品，其他支持的web容器有WAS、JBoss、Weblogic、WebSphere等... </p> 
+     </div> 
+     <div id="item5" class="item"> 
+      <h1>数据库下载</h1> 
+      <p>数窗WMS目前只支持MySql作为数据库，运行相对稳定的有两个小版本。</p> 
+      <p> 版本1: </p> 
+      <pre class="prettyprint">    colindeMacBook-Pro:bin colin$ mysql -V
+    ./mysql  Ver 14.14 Distrib 5.7.17, for macos10.12 (x86_64) using  EditLine wrapper
+    </pre> 
+      <p></p> 
+      <p> 版本2: </p> 
+      <pre class="prettyprint">    pi@raspberrypi:~ $ mysql -V
+    mysql  Ver 15.1 Distrib 10.1.37-MariaDB, for debian-linux-gnueabihf (armv8l) using readline 5.2
+    </pre> 
+      <p></p> 
+      <p> 请访问MySql官方网站下载对应的版本，<a target="_blank" href="https://www.mysql.com/downloads/">点击此处选择版本下载</a> </p> 
+     </div> 
+    </div> 
+    <p>其实，也许，可能不需要这么麻烦，您要做的只是<a href="./connect.html">联系我们</a>，表达您的诉求和愿望，剩下的都请交给我们吧！</p> 
+   </div> 
+  </div> 
+  <div class="bl-footer container-fluid"> 
+   <div class="container"> 
+    <ul class="bl-footer-list"> 
+     <li class="bl-footer-item"> <a href="documents.html">帮助</a> </li> 
+     <li class="bl-footer-item"> <a href="privacy.html">隐私</a> </li> 
+     <li class="bl-footer-item"> <a href="clause.html">条款</a> </li> 
+    </ul> 
+    <div class="copyright">
+     © 2018-2019 SCWMS.COM 版权所有
+    </div> 
+   </div> 
+  </div> 
+  <script src="/templates/JPressPortal/jquery/jquery.min.js"></script> 
+  <script src="/templates/JPressPortal/bootstrap/js/bootstrap.min.js"></script>   
+ </body>
+</html>

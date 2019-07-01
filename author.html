@@ -15,7 +15,11 @@
 </style>
 <body
 	style="color: rgb(51, 51, 51); border: 0px; padding: 0px; margin: 0px; font-size: 12px;">
-	<a href="javascript:void(0)" onclick="window.print()">打印简历</a>
+	<script type="text/javascript">
+	if (self != top) {  
+	     document.write('<a href="javascript:void(0)" onclick="window.print()">打印简历</a>');
+	}
+	</script>
 	<table
 		style="FONT-SIZE: 12px; FONT-FAMILY: 宋体; COLOR: rgb(0, 0, 0); LINE-HEIGHT: 18px"
 		cellpadding="0" width="778" align="center" border="0">

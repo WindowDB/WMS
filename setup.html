@@ -4,10 +4,10 @@
   <meta charset="utf-8"> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <title>仓库管理系统软件安装部署说明书-数窗系统-数窗WMS</title> 
+  <title>仓库管理系统软件安装部署说明书-WindowDB系统-WindowDBWMS</title> 
   <meta name="referrer" content="always"> 
   <meta name="keywords" content="安装部署,免费安装,服务器软件,物流软件,工作流软件,MIS系统,OA,WMS,OMS,TMS,ERP,财务,报表,打印,服务器组件"> 
-  <meta name="description" content="一腔热血开公司，采购销售忙不支；\n分身乏术内外事，件件操心乱如丝；\n创业维艰人皆知，决胜千里何所恃？\n运筹帷幄分主次，数窗系统捋青丝！"> 
+  <meta name="description" content="一腔热血开公司，采购销售忙不支；\n分身乏术内外事，件件操心乱如丝；\n创业维艰人皆知，决胜千里何所恃？\n运筹帷幄分主次，WindowDB系统捋青丝！"> 
   <link href="/templates/JPressPortal/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
   <link href="/templates/JPressPortal/css/bl-css.css" rel="stylesheet"> 
   <link href="/templates/JPressPortal/font-awesome/css/font-awesome.min.css" rel="stylesheet"> 
@@ -44,8 +44,8 @@
     </div> 
     <div id="content"> 
      <div id="item1" class="item"> 
-      <p>数窗WMS是一款由Java开发的BS架构软件。支持Windows、Linux、或Mac OS等大多数操作系统作为运行环境，除了必要的硬件、操作系统以及网络（局域网或广域网）环境之外，还需要另外安装java运行环境，web运行环境和数据库。下列依赖的第三方软件的具体下载方法以及地址参考<a href="./download.html">数窗WMS软件免费下载</a>页面的操作提示，以下列出生产运行环境所须软件各自的安装方法。本文以debian/ubuntu系列Linux为例。</p> 
-      <p>准备好以下安装文件，安装文件的获得请参考<a href="./download.html" target="_blank">《数窗WMS软件免费下载》</a>一文，此处不做赘述。</p> 
+      <p>WindowDBWMS是一款由Java开发的BS架构软件。支持Windows、Linux、或Mac OS等大多数操作系统作为运行环境，除了必要的硬件、操作系统以及网络（局域网或广域网）环境之外，还需要另外安装java运行环境，web运行环境和数据库。下列依赖的第三方软件的具体下载方法以及地址参考<a href="./download.html">WindowDBWMS软件免费下载</a>页面的操作提示，以下列出生产运行环境所须软件各自的安装方法。本文以debian/ubuntu系列Linux为例。</p> 
+      <p>准备好以下安装文件，安装文件的获得请参考<a href="./download.html" target="_blank">《WindowDBWMS软件免费下载》</a>一文，此处不做赘述。</p> 
       <pre class="prettyprint">    WindowDB:bin root$ ls
     apache-tomcat-7.0.73.tar.gz server-jre-8-linux-x64.rpm ROOT.war
 </pre> 
@@ -75,7 +75,7 @@
      </div> 
      <div id="item4" class="item"> 
       <h1>web服务安装部署</h1> 
-      <p>数窗的web服务使用tomcat 1.7</p> 
+      <p>WindowDB的web服务使用tomcat 1.7</p> 
       <p>解压tomcat安装包</p> 
       <p>tar -zxvf&nbsp;apache-tomcat-7.0.73.tar.gz</p> 
       <p>如果实在不能找到完全一致的小版本，下载其他的小版本也可以，版本号尽量保持在7.0，例如：</p> 
@@ -99,7 +99,7 @@
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;redirectPort="8443"
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; URIEncoding="UTF-8"/&gt;
 </pre> 
-      <p>在运行tomcat之前，请将数窗程序包：ROOT.war复制到tomcat的web目录/usr/lib/tomcat7/webapps/下</p> 
+      <p>在运行tomcat之前，请将WindowDB程序包：ROOT.war复制到tomcat的web目录/usr/lib/tomcat7/webapps/下</p> 
       <p>然后运行tomcat</p> 
       <p>./startup.sh</p> 
       <p>或者运行时查看tomcat日志</p> 
@@ -107,7 +107,7 @@
       <p>正常情况下可以见到如下的信息：&nbsp;<br> Using CATALINA_BASE: /usr/lib/tomcat<br> Using CATALINA_HOME: /usr/lib/tomcat<br> Using CATALINA_TMPDIR: /usr/lib/tomcat/temp<br> Using JRE_HOME: /usr/lib/jdk7/jre<br> Using CLASSPATH: /usr/lib/tomcat/bin/bootstrap.jar:/usr/lib/tomcat/bin/tomcat-juli.jar</p> 
       <p>可以使用wget http://localhost/ 进行测试。</p> 
       <p>如果可以打开浏览器，也可以在浏览器上地址栏中输入http://localhost/ 进行测试。</p> 
-      <p>如果tomcat启动正常，数窗WMS软件正常加载的话，浏览器会打开系统的登录窗口。当然，现在还不能登录，需要将数据库安装好，然后将数据库的访问地址账号密码配置到数窗的配置文件中。</p> 
+      <p>如果tomcat启动正常，WindowDBWMS软件正常加载的话，浏览器会打开系统的登录窗口。当然，现在还不能登录，需要将数据库安装好，然后将数据库的访问地址账号密码配置到WindowDB的配置文件中。</p> 
      </div> 
      <div id="item5" class="item"> 
       <h1>数据库安装</h1> 

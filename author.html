@@ -4,21 +4,30 @@
 <meta name="baidspider" content="noarchive">
 <meta name="googlebot" content="noarchive">
 <style>
-	table{
-		display:none;
+.printbutton {
+	display: inline;
+}
+
+table {
+	display: none;
+}
+
+@media print {
+	table {
+		display: inline;
 	}
-	@media print{
-		table{
-			display:inline;
-		}
+	.printbutton {
+		display: none;
 	}
+}
 </style>
 <body
 	style="color: rgb(51, 51, 51); border: 0px; padding: 0px; margin: 0px; font-size: 12px;">
 	<script type="text/javascript">
-	if (self != top) {  
-	     document.write('<a href="javascript:void(0)" onclick="window.print()">打印简历</a>');
-	}
+		if (self != top) {
+			document
+					.write('<a href="javascript:void(0)" class="printbutton" onclick="window.print()">打印简历</a>');
+		}
 	</script>
 	<table
 		style="FONT-SIZE: 12px; FONT-FAMILY: 宋体; COLOR: rgb(0, 0, 0); LINE-HEIGHT: 18px"
@@ -98,8 +107,8 @@
 															</tr>
 														</tbody>
 													</table>
-													
-													
+
+
 													<table style="FONT-SIZE: 12px; LINE-HEIGHT: 18px"
 														cellspacing="0" cellpadding="0" width="97%" align="center"
 														border="0">
@@ -194,8 +203,7 @@
 															</tr>
 															<tr>
 																<td id="Cur_Val" valign="top">
-																	我是一个平凡的人，只能做一些平凡的事，但渴望从平凡中不断地得到超越... <br>
-																<br>
+																	我是一个平凡的人，只能做一些平凡的事，但渴望从平凡中不断地得到超越... <br> <br>
 																</td>
 															</tr>
 															<tr>
@@ -278,35 +286,27 @@
 															<tr>
 																<td height="4" valign="middle" align="center"><img
 																	style="PADDING-LEFT: 1px" width="100%" height="4"><br>
-																<br>
-																<br></td>
+																	<br> <br></td>
 															</tr>
 															<tr>
 																<td valign="middle" align="left"><span
 																	style="font-weight: bold; color: rgb(0, 128, 0);">近期工作经历：</span><br>
-																<br>
-																<span style="font-weight: bold;"><a
+																	<br> <span style="font-weight: bold;"><a
 																		href="http://www.WindowDB.com">WindowDB.com</a><br></span><br>数窗WMS，不仅仅是库房管理软件；同时还可以直接从后台下订单，采购单，还包含企业日常的事务流程，而流程的运转也是从源头一直负责到底，是集成了工作流引擎，表单引擎，功能授权及鉴权引擎、为一体综合性企业管理信息系统。同时还作为企业软件中间件平台，为新的业务流程研发提供方便和快捷的可操作性。<br>
-																<br>负责项目：<br>数窗仓储一体化信息管理系统 （预备 自营 创业项目）<br>
-																<br>数窗软件分为WMSPC终端和仓储RF终端两块，充分利用了最近几年积累的仓储行业信息化经验，以及总结多年的项目研发经验，使用完全配置的快速开发模式。自主配置工作流引擎，表单定义引擎，报表生成解析引擎，网页打印配置管理，帮助系统模块，完成主体架构的设计，以及demo程序的编码，安排人员分模块并行作业，快速开发，包含WMS主体功能，有自营采购入库流程、寄售商品入库申请流程、商品的管理、组织架构人员权限的管理、库存移动以及商品调拨的管理等等，以及目前市场在售WMS所不具备的功能，如：商品销售流程(OMS)、新品上架审核流程、员工入职流程、通知公告发布流程、规章制度制定流程、知识库完善流程等等...
-																	<span style="white-space: pre"> </span><br>
-																<br>
-																<b>国金黄金股份有限公司（成熟，中心仓前置仓C端）<br></b><br>吸收中心仓前置仓管理经验，
+																	<br>负责项目：<br>数窗仓储一体化信息管理系统 （预备 自营 创业项目）<br>
+																	<br>数窗软件分为WMSPC终端和仓储RF终端两块，充分利用了最近几年积累的仓储行业信息化经验，以及总结多年的项目研发经验，使用完全配置的快速开发模式。自主配置工作流引擎，表单定义引擎，报表生成解析引擎，网页打印配置管理，帮助系统模块，完成主体架构的设计，以及demo程序的编码，安排人员分模块并行作业，快速开发，包含WMS主体功能，有自营采购入库流程、寄售商品入库申请流程、商品的管理、组织架构人员权限的管理、库存移动以及商品调拨的管理等等，以及目前市场在售WMS所不具备的功能，如：商品销售流程(OMS)、新品上架审核流程、员工入职流程、通知公告发布流程、规章制度制定流程、知识库完善流程等等...
+																	<span style="white-space: pre"> </span><br> <br>
+																	<b>国金黄金股份有限公司（成熟，中心仓前置仓C端）<br></b><br>吸收中心仓前置仓管理经验，
 																	B2B2C营销模式；<br>本职工作：负责支付分账系统，每日对账；贵金属银行网点销售系统（银商通）；上线柳州银行，贵州农商，珠海华润等多家银行的对接工作。<br>负责项目：<br>银商通（国金和银行对接
-																	OMS）<br>超真实（ OMS后端的账务）<br>
-																<br>
-																<b>北京万卉源网络科技有限公司 （ 初创，但业务完整，有代表性 ）：<br></b><br>负责项目：<br>万卉源内部供应链系统（花农
-																	2供应商2零售店模式）<br>
-																<br>主要贡献有三：1，校准库存，解决现有系统库存不准的情况，做到零误差。2，重构单据模型，商品模型，除销售订单意外的其他业务，统一使用单据。3，工作流上线。<br>
-																<br>
-																<span style="font-weight: bold;">北京环球国广媒体科技有限公司 （
-																		电视购物 COD到付模式 ）：</span><br>
-																<br>对电购电商行业进销存整体架构，
+																	OMS）<br>超真实（ OMS后端的账务）<br> <br> <b>北京万卉源网络科技有限公司
+																		（ 初创，但业务完整，有代表性 ）：<br>
+																</b><br>负责项目：<br>万卉源内部供应链系统（花农 2供应商2零售店模式）<br>
+																	<br>主要贡献有三：1，校准库存，解决现有系统库存不准的情况，做到零误差。2，重构单据模型，商品模型，除销售订单意外的其他业务，统一使用单据。3，工作流上线。<br>
+																	<br> <span style="font-weight: bold;">北京环球国广媒体科技有限公司
+																		（ 电视购物 COD到付模式 ）：</span><br> <br>对电购电商行业进销存整体架构，
 																	zookeeper分布式数据管理，dataguid关系型数据库读写分离库,应用负载均衡配置，整体建模，代码生成。供应商管理系统需求调研、设计、研发、测试。供应商管理系统需求分解、功能点确定、业务建模、各模块的局部设计、前后端编码、数据库设计规划以及单元测试和高瞬时并发环境下的抗压测试以及代码优化。<br>
-																<br>负责项目：环球scm供应商管理系统<br>
-																<br>
-																<br>
-																<p class="MsoNormal"></p>
+																	<br>负责项目：环球scm供应商管理系统<br> <br> <br>
+																	<p class="MsoNormal"></p>
 																	<p class="MsoNormal">
 																		<font face="微软雅黑" style="color: rgb(0, 128, 0);"><b>
 																				早期工作经历：</b></font>
@@ -447,8 +447,8 @@
 																				<td id="Cur_Val" valign="top" width="84%">业务： <br>
 																					机构为企业颁发证书。 <br> 两类单位：颁证机构，领证企业 <br>
 																					四种角色：企业人员、机构现场审核员、机构文审人员、审核见证人 <br>
-																					通过不同业务流程受理不同种类的业务单据，颁发不同领域的证书。 <br>
-																				<br> 用到技术和工具： <br>
+																					通过不同业务流程受理不同种类的业务单据，颁发不同领域的证书。 <br> <br>
+																					用到技术和工具： <br>
 																					mysql;spring;hibernate;jsf;smartclient;hudson;checkstyle;cxf;workflow;tabledefine;cc;cq;tomcat;
 																				</td>
 																			</tr>

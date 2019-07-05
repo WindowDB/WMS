@@ -48,6 +48,7 @@ function doc(id)
 }
 function submit(f)
 {
+	f.action="http://wms.windowdb.com:70/getResource/4294967285/html";
 	$.ajax({ 
 		type		: f.method, 
 		async		: false, 

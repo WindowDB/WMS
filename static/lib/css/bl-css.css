@@ -876,3 +876,27 @@ form .radio:hover {
 p{
 	text-indent:37px;
 }
+.vediolistitem{
+  	width: 33%!important;
+    float: left!important;
+    height: auto!important;
+    padding: 10px!important;
+    overflow: hidden!important; 
+  }
+  .vediolistitem span{ 
+	display:block;
+  	text-align:center;
+  	height:60px;
+  	overflow: hidden; 
+  }
+  .vediolistitem font{ 
+  	display:block;
+  	text-align:center;
+  	height:85px;
+  	overflow: hidden;  	
+  }
+  .vediolistitem a img{ 
+  	white-space: nowrap;
+  	width:100%;
+  	overflow: hidden; 
+  }

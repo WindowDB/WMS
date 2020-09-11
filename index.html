@@ -4,9 +4,12 @@
  <head> 
   <!-- meta http-equiv="refresh" content="0;url=http://workflow.net.cn/index.html" -->
 	<script language="javascript" type="text/javascript">
-		if(confirm("该站点内容已经更新，访问新域名点击'确认',继续停留老站点击‘取消’。")){
-			window.location.href='http://workflow.net.cn/index.html';
-		}
+		setTimeout(function(){
+			if(confirm("该站点内容已经更新，新域名访问www.workflow.net.cn，访问新域名点击'确认',继续停留老站点击‘取消’。")){
+				window.location.href='http://workflow.net.cn/index.html';
+			}
+		}, 5000);
+		
 	</script>
   <meta charset="utf-8"> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
